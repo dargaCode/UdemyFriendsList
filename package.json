@@ -1,0 +1,23 @@
+{
+  "name": "post-route-test",
+  "version": "1.0.0",
+  "description": "Test post routes in express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dargaCode/UdemyPostRouteTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dargaCode/UdemyPostRouteTest/issues"
+  },
+  "homepage": "https://github.com/dargaCode/UdemyPostRouteTest#readme",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
