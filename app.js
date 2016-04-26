@@ -16,6 +16,16 @@ app.set('view engine', 'ejs');
 const PORT_NUM = 3000;
 const SERVER_START_MSG = 'Serving Post Route Test on port ' + PORT_NUM;
 
+// VARIABLES
+
+let friends = [
+  'Charlie',
+  'Mac',
+  'Frank',
+  'Dee',
+  'Dennis',
+];
+
 // SERVER
 
 app.listen(process.env.PORT || PORT_NUM, function () {
@@ -25,5 +35,7 @@ app.listen(process.env.PORT || PORT_NUM, function () {
 // ROUTES
 
 app.get("/", function(req, res) {
-  res.send("Loaded Root Route!");
+  res.render('friends', {
+    friends: friends
+  });
 });
