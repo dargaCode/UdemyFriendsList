@@ -7,11 +7,13 @@
 
 const express = require('express');
 const app = express();
+const ejs = require('ejs');
 
-// EXPRESS SETTINGS
+// SETTINGS
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
+ejs.delimiter = '?';
 
 const PORT_NUM = 3000;
 const SERVER_START_MSG = 'Serving Post Route Test on port ' + PORT_NUM;
