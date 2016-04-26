@@ -34,7 +34,7 @@ app.listen(process.env.PORT || PORT_NUM, function () {
 
 // ROUTES
 
-app.get("/", function(req, res) {
+app.get('/', function(req, res) {
   res.render('friends', {
     friends: friends
   });
