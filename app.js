@@ -41,8 +41,9 @@ app.listen(process.env.PORT || PORT_NUM, function () {
 // ROUTES
 
 app.post('/addfriend', function(req,res) {
-  console.log(req.body.newFriend);
-  res.send('you have triggered the post route');
+  var newFriend = req.body.newFriend;
+  friends.push(newFriend);
+  res.redirect('/');
 });
 
 app.get('/', function(req, res) {
