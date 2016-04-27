@@ -13,6 +13,11 @@
       <h2> <?= friend ?> </h2>
     <? }); ?>
 
+    <form action="/addfriend" method="POST">
+      <input type="text" name="newFriend" placeholder="name"></input>
+      <button>Add new friend</button>
+    </form>
+
   </div>
 
 </body>

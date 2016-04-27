@@ -8,12 +8,16 @@
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
+const bodyParser = require('body-parser');
 
 // SETTINGS
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 ejs.delimiter = '?';
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 const PORT_NUM = 3000;
 const SERVER_START_MSG = 'Serving Post Route Test on port ' + PORT_NUM;
@@ -35,6 +39,11 @@ app.listen(process.env.PORT || PORT_NUM, function () {
 });
 
 // ROUTES
+
+app.post('/addfriend', function(req,res) {
+  console.log(req.body.newFriend);
+  res.send('you have triggered the post route');
+});
 
 app.get('/', function(req, res) {
   res.render('friends', {
