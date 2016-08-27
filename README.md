@@ -11,4 +11,4 @@ Next, I’ll learn learn how to add in a database to save data permanently!
 
 <a href="http://darga-friends-list.herokuapp.com/"><b>Live Webpage</b></a>
 
-<img src ="http://36.media.tumblr.com/59b901801a75a3cacb92b878c3b184d4/tumblr_inline_o6bh57Diqf1tvc5hi_1280.png" width=“300" height="300">
+<img src ="http://36.media.tumblr.com/59b901801a75a3cacb92b878c3b184d4/tumblr_inline_o6bh57Diqf1tvc5hi_1280.png" width="550">
